@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  background: #d3d9dc;
+}
+section#tools {
+  width: 90%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.accordion{
+  margin: 60px auto;
+  width: 1200px;
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 0px;
+  background:  #fff;
+  /*box-shadow: 6px 6px  10px -1px rgba(120, 103, 189, 0.7),
+              -6px -6px  10px -1px rgba(0, 0, 0, 0.17);*/
+}
+
+.accordion li:hover{
+  background-color: #45489a;
+  color: #fff;
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type = "radio"]{
+  display: none;
+}
+
+.accordion .content{
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 500px;
+  padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before{
+  content: '-';
+}
