@@ -355,7 +355,11 @@ header {
 
 .Modern-Slider .info p {
   font-size: 15px;
-  color: #fff;
+  color: #fff;	
+  background-color: rgb(85, 85, 82);
+  border-radius: 15px;
+  background-size: auto;
+  opacity: 0.5;
 }
 
 .Modern-Slider .info .white-button {
