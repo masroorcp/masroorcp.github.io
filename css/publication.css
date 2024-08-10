@@ -1,0 +1,89 @@
+.publication_list{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px 50px;
+    max-height: 700px;
+    overflow-y: scroll;
+}
+#publication ol{
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style-type: none; /* Removes default numbering */
+    counter-reset: custom-counter; /* Resets the custom counter */
+}
+#publication li{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        padding-left: 50px;
+        min-height: 35px;
+        margin: 15px 0px;
+        padding-top: 4px;
+        text-align: left;
+        counter-increment: custom-counter; /* Increments the custom counter */
+}
+#publication li:before{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    /* border: 1px solid #000; */
+    /* border-radius: 50%; */
+    /* width: 30px;
+    height: 30px; */
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    content: counter(custom-counter) "."; /* Styles numbering as numbers */
+  }
+  .reverse-list {
+    display: flex;
+    flex-direction: column-reverse; /* Reverses the order of list items */
+}
+  .publication_title{
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .publication_author{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .publication_link a{
+    font-size: 12px;
+text-decoration: none;
+color: #000;
+  }
+  
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 690px) {
+    .publication_list{
+        padding: 20px;
+    }
+    .publication_title,  .publication_author{
+      margin-bottom: 2px;
+    }
+}

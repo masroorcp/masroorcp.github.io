@@ -134,3 +134,22 @@ section#timeline article:nth-child(5) div.inner h2 {
 section#timeline article:nth-child(5) div.inner h2:after {
   background: #9b59b6;
 }
+.downloadCv{
+  margin: auto;
+  width: 90%;
+}
+
+/* Responsive Style */
+@media (max-width: 690px) {
+  section#timeline article div.inner {
+    width: 100%;
+    /* float: left; */
+    margin: 75px 0 0 0;
+    /* border-radius: 8px; */
+  } 
+  section#timeline article:nth-child(2) div.inner h2:after ,
+  section#timeline article:nth-child(3) div.inner h2:after,
+  section#timeline article:nth-child(4) div.inner h2:after {
+    display: none;
+  }
+}

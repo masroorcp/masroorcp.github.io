@@ -1,67 +1,110 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Masroor C. Pookkillath</title>
-        
-<!-- 
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Masroor C. Pookkillath</title>
+
+    <!-- 
 
 Sentra Template
 
 https://templatemo.com/tm-518-sentra
 
 -->
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link rel="stylesheet" href="css/timeline.css">
-        <link rel="stylesheet" href="css/research.css">
-	<link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/tools.css">
+    <link rel="stylesheet" href="css/publication.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
 
 <body>
 
+    <div class="popup-container" id="popup1">
+        <div class="popup-content  popup-bg-red">
+            <span id="close">&times;</span>
+            <h3>Description 1</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
 
+    <div class="popup-container" id="popup2">
+        <div class="popup-content popup-bg-blue">
+            <span id="close">&times;</span>
+            <h3>Description 2</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
 
-        <header class="nav-down responsive-nav hidden-lg hidden-md">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <nav>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#top">About Me</a></li>
-                        <li><a href="#cv">Curriculum vitae</a></li>
-                        <li><a href="#research">Research Interests</a></li>
-                        <li><a href="#blog">Activities</a></li>
-                        <li><a href="#tools">Tools</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <div class="popup-container" id="popup3">
+        <div class="popup-content popup-bg-green">
+            <span id="close">&times;</span>
+            <h3>Description 3</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
 
-        <div class="sidebar-navigation hidde-sm hidden-xs">
-            <div class="logo">
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li class="logo-mob">
+                        <div class="logo-border">
+                            <img src="img/user.png" width="120px" style="border-radius: 50%;">
+                            <a href="#">Masroor <em>C. Pookkillath</em></a>
+                        </div>
+                    </li>
+                    <li><a href="#top">About Me</a></li>
+                    <li><a href="#timeline">Curriculum vitae</a></li>
+                    <li><a href="#research">Research Interests</a></li>
+                    <li><a href="#publication">Publication</a></li>
+                    <li><a href="#blog">Activities</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <div class="logo-border">
+                <img src="img/user.png" width="120px" style="border-radius: 50%;">
                 <a href="#">Masroor <em>C. Pookkillath</em></a>
             </div>
+
+        </div>
+        <div class="nav-list">
             <nav>
                 <ul>
                     <li>
@@ -79,10 +122,17 @@ https://templatemo.com/tm-518-sentra
                         </a>
                     </li>
                     <li>
-                      <a href="#research">
+                        <a href="#research">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Research Interests
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#publication">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Publications
                         </a>
                     </li>
                     <li>
@@ -108,39 +158,50 @@ https://templatemo.com/tm-518-sentra
                     </li>
                 </ul>
             </nav>
-            <!--<ul class="social-icons">
+        </div>
+        <!--<ul class="social-icons">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-rss"></i></a></li>
                 <li><a href="#"><i class="fa fa-behance"></i></a></li>
             </ul>-->
-        </div>
-        <div class="slider">
-            <div class="Modern-Slider content-section" id="top"> 
-                <!-- Item -->
-                <div class="item item-1">
-                    <div class="img-fill">
+    </div>
+
+    <div class="slider">
+        <div class="Modern-Slider content-section" id="top">
+            <!-- Item -->
+            <div class="item item-1">
+                <div class="img-fill">
                     <div class="image"></div>
                     <div class="info">
-                            <div>
-                            <h1 align="right"><font color="white">About me</font></h1>
-                            <p align="right"><font color="white">
-			    	            I am a cosmologist interested in theories of gravity to understand the dark sector of the universe <br>
-				                and testing gravity theories: from cosmology to strong gravity systems, like black holes. At present, <br>
-                                I am a postdoc fellow at the Centre for Theoretical Physics and Natural Philosophy at Mahidol University, <br>
-                                Thailand. Before joining this position, I held a short-term postdoc at Yukawa Institute for Theoretical <br>
-                                Physics, Kyoto University, where I finished my thesis work on "Theoretical and Observational Constraints <br>
-                                on the Cosmology of Theories of Gravity".</font></p>
-                                <div class="white-button button">
-                                    <a href="#timeline">Discover More</a>
-                                </div>
-                            </div>			   
-                        </div>
+                        <div>
+                            <h1 style="text-align: right;color: white;">
+                                About me
+                            </h1>
+                            <p>
+                                I am a cosmologist interested in theories of gravity to understand the dark sector
+                                of the universe
+                                and testing gravity theories: from cosmology to strong gravity systems, like black
+                                holes. At present,
+                                I am a postdoc fellow at the Centre for Theoretical Physics and Natural Philosophy
+                                at Mahidol University,
+                                Thailand. Before joining this position, I held a short-term postdoc at Yukawa
+                                Institute for Theoretical
+                                Physics, Kyoto University, where I finished my thesis work on "Theoretical and
+                                Observational Constraints
+                                on the Cosmology of Theories of Gravity".
+
+                            </p>
+                            <div class="white-button button">
+                                <a href="#timeline">Discover More</a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!--
+            <!--
                     <div class="item item-2">
                         <div class="img-fill">
                         <div class="image"></div>
@@ -173,412 +234,763 @@ https://templatemo.com/tm-518-sentra
                         </div>
                     </div> -->
 
+        </div>
+    </div>
+    </div>
+
+    <div class="page-content">
+        <section id="timeline" class="content-section">
+            <div class="section-heading">
+                <h1>Curriculum<br><em>vitae</em></h1>
+            </div>
+            <article>
+                <div class="inner">
+                    <span class="date">
+                        <!--<span class="day">30<sup>th</sup></span> -->
+                        <span class="month">2023</span>
+                        <!--<span class="year">2023</span>-->
+                    </span>
+                    <h2>Centre for Theoretical Physics and Natural Philosophy, Thailand</h2>
+                    <p>I believe this is my first postdoc, where I am working on dark energy theories and their
+                        cosmological tests. In particular, I work on
+                        interacting dark sector models.</p>
                 </div>
+            </article>
+
+            <article>
+                <div class="inner">
+                    <span class="date">
+                        <!--<span class="day">26<sup>th</sup></span> -->
+                        <span class="month">April</span>
+                        <span class="year">2021</span>
+                    </span>
+                    <h2>Yukawa Institute for Theoretical Physics</h2>
+                    <p>It was a short-term position for six months while waiting for a visa from China during COVID-19.
+                        During this
+                        time I extended the minimal theories of massive gravity, and we call it eMTMG. This theory has
+                        many interesting properties.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="inner">
+                    <span class="date">
+                        <!--<span class="day">26<sup>th</sup></span> -->
+                        <span class="month">Sep</span>
+                        <span class="year">2021</span>
+                    </span>
+                    <h2>Kyoto University</h2>
+                    <p>I did my PhD from the cosmology research group, at Yukawa Institute for Theoretical Physics at
+                        Kyoto University, Japan. I learned quite a lot about Physics from my advisor and my friends.
+                        During this
+                        the time I was working on theoretical and observational tests of gravity theories in the context
+                        of
+                        cosmology. I have also been involved in addressing the Hubble tension with extended theories of
+                        gravity.</p>
+                </div>
+            </article>
+        </section>
+
+        <div class="downloadCv">
+            <div class="white-button button">
+                <p class="cv-download-para" style="color: black;">
+                    If you want my full CV, click
+                    <a href="./cv/masroor-cv.pdf" target="_blank">Download full CV</a>
+                    <!-- You can also see my list of publication, click
+                    <a href="./cv/masroor-lop.pdf">Publication List</a> -->
+                </p>
             </div>
         </div>
 
-	<div class="page-content">
-            <section id="timeline" class="content-section">
-                <div class="section-heading">
-                    <h1><em>Curriculum vitae</em></h1>
-                </div>
-                <article>
-                    <div class="inner">
-                        <span class="date">
-                            <!--<span class="day">30<sup>th</sup></span> -->
-                            <span class="month">2023</span>
-                            <!--<span class="year">2023</span>-->
-                        </span>
-                        <h2>Centre for Theoretical Physics and Natural Philosophy, Thailand</h2>
-                        <p>I believe this is my first postdoc, where I am working on dark energy theories and their cosmological tests. In particular, I work on
-                            interacting dark sector models.</p>
-                    </div>
-                </article>
 
-                <article>
-                    <div class="inner">
-                        <span class="date">
-                            <!--<span class="day">26<sup>th</sup></span> -->
-                            <span class="month">April</span>
-                            <span class="year">2021</span>
-                        </span>
-                        <h2>Yukawa Institute for Theoretical Physics</h2>
-                        <p>It was a short-term position for six months while waiting for a visa from China during COVID-19. During this
-                             time I extended the minimal theories of massive gravity, and we call it eMTMG. This theory has many interesting properties.</p>
-                    </div>
-                </article>
+        <section id="research" class="content-section">
+            <div class="section-heading">
+                <h1>Research<br> <em>Interests</em></h1>
+                <p>My research interest primarily falls on theories of gravity. In particular, I work on theories beyond
+                    GR: from IR modification,
+                    understanding dark energy physics to UV/strong gravity modification and testing gravity theories:
+                    from cosmology to strong
+                    gravity systems, like black holes. I am also actively involved in understanding tensions in
+                    cosmology from the perspective
+                    of beyond LCDM.</p>
+            </div>
 
-                <article>
-                    <div class="inner">
-                        <span class="date">
-                            <!--<span class="day">26<sup>th</sup></span> -->
-                            <span class="month">Sep</span>
-                            <span class="year">2021</span>
-                        </span>
-                        <h2>Kyoto University</h2>
-                        <p>I did my PhD from the cosmology research group, at Yukawa Institute for Theoretical Physics at 
-                            Kyoto University, Japan. I learned quite a lot about Physics from my advisor and my friends. During this
-                            the time I was working on theoretical and observational tests of gravity theories in the context of 
-                            cosmology. I have also been involved in addressing the Hubble tension with extended theories of gravity.</p>
-                    </div>
-                </article>
-                
-                
-
-            </section>
-            <div class="item">
+            <!-- <div class="item">
                 <div class="white-button button">
-                    <p align="center"><font color="black"> </font>If you want my full CV, click 
-                    <a href="./cv/masroor-cv.pdf">Download full CV</a> 
-                    You can also see my list of publication, click 
-                        <a href="./cv/masroor-lop.pdf">Publication List</a> </p>
+                    <p align="left">
+                        <font color="black">To see my full publications, please visit my INSPIRE profile</font>
+                        <a href="https://inspirehep.net/authors/1741510?ui-citation-summary=true">INSPIRE</a>
+                    </p>
                 </div>
-            </div> 
+            </div> -->
 
-            <section id="research" class="content-section">
-                <div class="section-heading">
-                    <h1>Research<br> <em>Interests</em></h1>
-                    <p>My research interest primarily falls on theories of gravity. In particular, I work on theories beyond GR: from IR modification, 
-                        understanding dark energy physics to UV/strong gravity modification and testing  gravity theories: from cosmology to strong 
-                        gravity systems, like black holes. I am also actively involved in understanding tensions in cosmology from the perspective 
-                        of beyond LCDM.</p>
-                </div>
 
-                <div class="item">
-                    <div class="white-button button">
-                        <p align="left"><font color="black">To see my full publications, please visit my INSPIRE profile</font> 
-                        <a href="https://inspirehep.net/authors/1741510?ui-citation-summary=true">INSPIRE</a> 
-                       </p>
+            <article>
+                <div class="centralalign">
+                    <div class="circle-d red popup-btn" data-popup="#popup1">
+                        <div class="research1 popup-btn" data-popup="#popup1"> Dark Energy Theories
+                            <p style="margin-left:15%;">Read more</p>
+                        </div>
                     </div>
-                </div>
-                
-                <article>
-                    <div class="centralalign">
-                        <div class="circlesred"><div class="research1"> Dark Energy Theories </div>
-                            <div class="circlesblue"><div class="research2"> Testing Gravity </div>
-                                <div class="circlesgreen"><div class="research3"> Cosmological Tension </div></div>
-                            </div>
-                        </div>    
-                    </div>                 
-                </article>
-                
-            </section>
-
-
-            
-
-            
-            <section id="blog" class="content-section">
-                <div class="section-heading">
-                    <h1>My<br><em>Activities</em></h1>
-                    <p>Here I show the activities I am involved in that motivate me <br>
-                        to follow my passion.</p>
-                </div>
-                <div class="section-content">
-                    <div class="tabs-content">
-                        <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                              <li><a href="#tab1" class="active">Institutional activities</a></li>
-                              <li><a href="#tab2">Workshop Organisation</a></li>
-                              <li><a href="#tab3">Invited Talks/Lectures</a></li>
-                              <li><a href="#tab4">Public outreach</a></li>
-                            </ul>
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/ctpnp_seminar_scale.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Cosmology Seminar</h4>
-                                                    <span>Organiser</span>
-                                                    <span>[20 October 2022 - Present]</span>
-                                                    <p>This is a fortnight event, Tuesday at 2.00 PM, by the cosmology group at the Centre for 
-                                                        Theoretical Physics and Natural Philosophy, where the speaker presents progress on 
-                                                        his/her research before the group members. We are having a very good time with it.</p>
-                                                    <div class="accent-button button">
-                                                        <a href="https://na.mahidol.ac.th/nas2020/nas-cosmology-hand-on-discussion/">Details</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/ctpnp_reading_scale.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Reading Club @ CTPNP</h4>
-                                                    <span>Organiser</span>
-                                                    <span>[20 October 2022 - Present]</span>
-                                                    <p>This is an informal activity, where the cosmology group at CTPNP choose a book 
-                                                        on advanced subjects in gravity and field theory. The aim is to brush up our 
-                                                        basic knowledge and expose the group to advanced knowledge, in the end, it would 
-                                                        help in our research.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="https://na.mahidol.ac.th/nas2020/">CTPNP</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/yitp_reading_scale.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Reading Club @ YITP</h4>
-                                                    <span>Organiser</span>
-                                                    <span> </span>
-                                                    <p>The idea of the reading club was already there at Yukawa Institute, where I did my PhD. 
-                                                        I spend more than three years in YITP and we almost finished six books in that 
-                                                        period. At some point, the duty of organizing the reading club happened to be my responsibility 
-                                                        and I was enjoying it. Now, I am not present at YITP to run it.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="https://www.yukawa.kyoto-u.ac.jp/en-GB/">YITP</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab2">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/yitp_1_scale.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Gravity 2023: Dawn of Field-theoretic Approach </h4>
-                                                    <span>Organiser [18 July 2023 - 20 July 2023]</span>
-                                                    <p>This workshop aims to bring together experts working on field-theoretic approaches applied 
-                                                        to gravity to share ideas and expertise and to offer introductory talks to teach these 
-                                                        state-of-the-art subjects to a broader audience. All talks (invited and contributed) are 
-                                                        to be given on-site but the workshop will also be accessible to online audiences who 
-                                                        cannot attend on-site.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s53127?lang=en-GB">Workshop Page</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/yitp_2_scale.JPG" alt="">
-                                                <div class="text-content">                                                    
-                                                    <h4>Gravity: Current challenges in black hole physics and cosmology </h4>
-                                                    <span>Organiser [20 June 2022 - 01 July 2022]</span>
-                                                    <p>The goal of the workshop is to bring together experts working on several aspects of the 
-                                                        gravitational interaction to share ideas and expertise. It will include recent progress 
-                                                        on modified gravity theories, black hole physics, and early and late-time cosmology. I 
-                                                        have been a part of organising this event. It was an interesting experience and I learned a 
-                                                        lots of lessons.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s52959?lang=en-GB">Workshop Page</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                                <div id="tab3">
-                                    <ul>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/icts.jpg" alt="">
-                                                <div class="text-content">
-                                                    <h4>ICTS, Bangalore, India</h4>
-                                                    <h3>Extended minimal theories of massive gravity.</h3>
-                                                    <span>April 23, 2023</span>
-                                                    <p>I gave this talk on a visit to the Astrophysical Relativity research group at the International Center for Theoretical Science (ICTS), Bangalore.
-							I also attend an interesting one-week discussion on the Lunar Gravitational-wave Antenna (LGWA), which is an ambitious proposal to detect 
-							deci-hetz band GWs. I met great people working on gravitational wave astronomy and made a very good interaction.</p>
-                                                                                                 
-                                                    <div class="accent-button button">
-                                                        <a href="https://www.icts.res.in/research/astrorel">Visit the group</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/titec_scale.jpg" alt="">
-                                                <div class="text-content">
-                                                   <h4>Department of Physics, Tokyo Institute of Technology</h4>
-                                                    <h3>VCDM and Cuscuton</h3>
-                                                    <span>October 12, 2022</span>
-                                                    <p>This talk was given before the cosmology and gravity group at the Tokyo Institute of Technology, Tokyo, Japan. The presentation of my results
-							    on comparing two theories: VCDM and Cuscuton. The talk was pedagogical since there was participation from Master's students.</p>
-                                                    
-                                                    <div class="accent-button button">                                                        
-                                                        <a href="http://www.th.phys.titech.ac.jp/cosmo/gucciweb/member.html">Visit the group</a>                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item">
-                                                <img src="img/NAS_workshop_scale.jpg" alt="">
-                                                <div class="text-content">
-							<h4>NAS Workshop 2022</h4>
-                                                    <h3>VCDM: Minimal theory of gravity</h3>
-                                                    <span>September 15-18, 2022</span>
-                                                    <p>This workshop is CTPNP internal event, where researchers from Thailand meet and discuss, the research topics and make a very relaxed environment. 
-							    This workshop promotes and gives an environment to make new collaborations on our interesting research themes. In this event, I was given 
-						    a chance to introduce my work on a Minimally Modified Gravity Theory called VCDM.</p>                                                      
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="https://na.mahidol.ac.th/nas2020/researchworkshopseries/">More on NAS workshop</a>
-                                                    </div>				
-							
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id="tab4">
-                                    <ul>
-                                        <li>
-						<div class="item">
-						<img src="img/MES_PONNANI_COLLEGE_MAIN_BUILDING_scale.jpeg" alt="">
-                                                	<div class="text-content">
-                                                    		<h4>On the edge of what we know?</h4>
-                                                    		<h3>The 2nd CAF&Eacute FICICA, Good Old days cafe & bistro, Nakhon Sawan</h3>
-                                                    		<span>5 August, 2023</span>
-                                                    		<p>This is my second formal outreach activity and was a very amazing event. After the talk, there was a panel discussion
-								together with Prof. Shinji Tujikawa and Prof. Burin Gumjudpai. The public asked many interesting questions about cosmology
-								and the limitations of present understanding. The audience also included very eminent people like the local governor of the 
-								Nakhon Sawan province. He got impressed by this event and said, he will support such events in future. Here are some news links for it. </p>
-								<div class="accent-button button">
-                                                        		<a href="https://na.mahidol.ac.th/nas2020/public-forum//">CAF&Eacute FICICA</a>
-                                                    		</div>
-                                               		 </div>
-                                        </div>
-						
-                                            <div class="item">
-                                                <img src="img/MES_PONNANI_COLLEGE_MAIN_BUILDING_scale.jpeg" alt="">
-                                                <div class="text-content">
-                                                    <h4>Understanding our Universe: Current status</h4>
-                                                    <h3>Department of Physics, MES Ponnani College, Ponnani, India</h3>
-                                                    <span>27 June, 2022</span>
-                                                    <p>This is my first outreach activity. I was addressing Undergraduate students in a community college in a 
-                                                        a small town called Ponnani in Kerala, India. The basic idea is to give motivation to students who are 
-                                                        mostly women and to introduce research to them. This was a very memorable moment for me to make a presentation 
-                                                        in this college, where I was a student a few years back.</p>
-                                                    
-                                                    <div class="accent-button button">
-                                                        <a href="http://www.mesponnanicollege.ac.in/">Visit College</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-									
-                                        </li>                                
-                                                                            
-                                    </ul>
-                                </div>
-                            </section> 
+                    <div class="circle-d blue popup-btn" data-popup="#popup2">
+                        <div class="research2 popup-btn" data-popup="#popup2"> Testing Gravity
+                            <p>Read more</p>
+                        </div>
+                    </div>
+                    <div class="circle-d green popup-btn" data-popup="#popup3">
+                        <div class="research3 popup-btn" data-popup="#popup3"> Cosmological Tension
+                            <p>Read more</p>
                         </div>
                     </div>
                 </div>
-            </section>
-		
-            <section id="tools" class="content-section">
+
+            </article>
+            <!-- <article>
+                <div class="centralalign">
+                    <div class="circle-d red" id="red-circle">
+                        <div class="research1"> Dark Energy Theories </div>
+                    </div>
+                    <div class="circle-d blue" id="blue-circle" >
+                        <div class="research2" > Testing Gravity </div>
+                    </div>
+                    <div class="circle-d green" id="green-circle">
+                        <div class="research3"  > Cosmological Tension </div>
+                    </div>
+                </div>
+
+            </article> -->
+
+            <div class="mobile-circle-section">
+                <div class="slider-mob slider-for">
+                    <div class="slider-main popup-bg-red">
+                        <div class="slider-content-mob">
+                            <h3 class="slider-head">Dark Energy Theories</h3>
+                            <p class="slider-para">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem
+                                Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type
+                                and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                    <div class="slider-main popup-bg-blue">
+                        <div class="slider-content-mob">
+                            <h3 class="slider-head">Testing Gravity</h3>
+                            <p class="slider-para">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type
+                                and scrambled it to make a type specimen book.</p>
+                            <h3 class="slider-head">Testing Gravity</h3>
+                            <p class="slider-para">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type
+                                and scrambled it to make a type specimen book.</p>
+
+                        </div>
+                    </div>
+                    <div class="slider-main popup-bg-green">
+                        <div class="slider-content-mob">
+                            <h3 class="slider-head">Cosmological Tension</h3>
+                            <p class="slider-para">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of type
+                                and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-mob slider-nav">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <div class="popup-bg-red"
+                            style="border-radius: 50%;width: 50px;height: 50px;display: flex;justify-content: center;">
+                            <h3 style="font-size: 15px;">1</h3>
+                        </div>
+
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <div class="popup-bg-blue"
+                            style="border-radius: 50%;width: 50px;height: 50px;display: flex;justify-content: center;">
+                            <h3 style="font-size: 15px;">2</h3>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <div class="popup-bg-green"
+                            style="border-radius: 50%;width: 50px;height: 50px;display: flex;justify-content: center;">
+                            <h3 style="font-size: 15px;">3</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="publication" class="content-section">
+            <div class="section-heading">
+                <h1>My<br><em>Publications</em></h1>
+                <p>Here are my list of publications.</p>
+            </div>
+            <div class="section-content">
+
+                <div class="item text-size">
+                    <div class="white-button button">
+                        <div>
+                            To see my full publications, please visit my INSPIRE profile
+                            <a href="https://inspirehep.net/authors/1741510?ui-citation-summary=true"
+                                target="_blank">INSPIRE</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="publication_list">
+                    <ol class="reverse-list">
+                        <li>
+                            <div class="publication_title">Gravitational
+                                collapse and formation of a black hole in a type II minimally modified gravity theory
+                            </div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">JCAP 03 (2023) 030 [2211.14760].</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="publication_title">Extended minimal theories of
+                                massive gravity</div>
+                            <div class="publication_author">A. De Felice, S. Mukohyama and M.C. Pookkillath</div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2092633" target="_blank">Phys. Rev. D 106 (2022) 084050
+                                    [2206.03338].</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="publication_title">Comparison of two
+                                theories of Type-IIa minimally modified gravity</div>
+                            <div class="publication_author">A. De Felice, K.-i. Maeda, S. Mukohyama and M.C. Pookkillath
+                            </div>
+                            <div class="publication_link">
+                                <a href="https://inspirehep.net/literature/2785301" target="_blank">Phys. Rev. D 106 (2022) 024028
+                                    [2204.08294].</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="item text-size">
+                    <div class="white-button button">
+                        <div>
+                            You can also see my list of publication, click
+                            <a href="./cv/masroor-lop.pdf" target="_blank">Publication List</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="blog" class="content-section">
+            <div class="section-heading">
+                <h1>My<br><em>Activities</em></h1>
+                <p>Here I show the activities I am involved in that motivate me <br>
+                    to follow my passion.</p>
+            </div>
+            <div class="section-content">
+                <div class="tabs-content">
+                    <div class="wrapper">
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">Institutional activities</a></li>
+                            <li><a href="#tab2">Workshop Organisation</a></li>
+                            <li><a href="#tab3">Invited Talks/Lectures</a></li>
+                            <li><a href="#tab4">Public outreach</a></li>
+                        </ul>
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/ctpnp_seminar_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Cosmology Seminar</h4>
+                                                <span>Organiser</span>
+                                                <span>[20 October 2022 - Present]</span>
+                                                <p>This is a fortnight event, Tuesday at 2.00 PM, by the cosmology group
+                                                    at the Centre for
+                                                    Theoretical Physics and Natural Philosophy, where the speaker
+                                                    presents progress on
+                                                    his/her research before the group members. We are having a very good
+                                                    time with it.</p>
+                                                <div class="accent-button button">
+                                                    <a href="https://na.mahidol.ac.th/nas2020/nas-cosmology-hand-on-discussion/"
+                                                        target="_blank">Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/ctpnp_reading_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Reading Club @ CTPNP</h4>
+                                                <span>Organiser</span>
+                                                <span>[20 October 2022 - Present]</span>
+                                                <p>This is an informal activity, where the cosmology group at CTPNP
+                                                    choose a book
+                                                    on advanced subjects in gravity and field theory. The aim is to
+                                                    brush up our
+                                                    basic knowledge and expose the group to advanced knowledge, in the
+                                                    end, it would
+                                                    help in our research.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://na.mahidol.ac.th/nas2020/"
+                                                        target="_blank">CTPNP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/yitp_reading_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Reading Club @ YITP</h4>
+                                                <span>Organiser</span>
+                                                <span> </span>
+                                                <p>The idea of the reading club was already there at Yukawa Institute,
+                                                    where I did my PhD.
+                                                    I spend more than three years in YITP and we almost finished six
+                                                    books in that
+                                                    period. At some point, the duty of organizing the reading club
+                                                    happened to be my responsibility
+                                                    and I was enjoying it. Now, I am not present at YITP to run it.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://www.yukawa.kyoto-u.ac.jp/en-GB/"
+                                                        target="_blank">YITP</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/yitp_1_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Gravity 2023: Dawn of Field-theoretic Approach </h4>
+                                                <span>Organiser [18 July 2023 - 20 July 2023]</span>
+                                                <p>This workshop aims to bring together experts working on
+                                                    field-theoretic approaches applied
+                                                    to gravity to share ideas and expertise and to offer introductory
+                                                    talks to teach these
+                                                    state-of-the-art subjects to a broader audience. All talks (invited
+                                                    and contributed) are
+                                                    to be given on-site but the workshop will also be accessible to
+                                                    online audiences who
+                                                    cannot attend on-site.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s53127?lang=en-GB"
+                                                        target="_blank">Workshop
+                                                        Page</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/yitp_2_scale.JPG" alt="">
+                                            <div class="text-content">
+                                                <h4>Gravity: Current challenges in black hole physics and cosmology
+                                                </h4>
+                                                <span>Organiser [20 June 2022 - 01 July 2022]</span>
+                                                <p>The goal of the workshop is to bring together experts working on
+                                                    several aspects of the
+                                                    gravitational interaction to share ideas and expertise. It will
+                                                    include recent progress
+                                                    on modified gravity theories, black hole physics, and early and
+                                                    late-time cosmology. I
+                                                    have been a part of organising this event. It was an interesting
+                                                    experience and I learned a
+                                                    lots of lessons.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://www.yukawa.kyoto-u.ac.jp/seminar/s52959?lang=en-GB"
+                                                        target="_blank">Workshop
+                                                        Page</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div id="tab3">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/icts.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>ICTS, Bangalore, India</h4>
+                                                <h3>Extended minimal theories of massive gravity.</h3>
+                                                <span>April 23, 2023</span>
+                                                <p>I gave this talk on a visit to the Astrophysical Relativity research
+                                                    group at the International Center for Theoretical Science (ICTS),
+                                                    Bangalore.
+                                                    I also attend an interesting one-week discussion on the Lunar
+                                                    Gravitational-wave Antenna (LGWA), which is an ambitious proposal to
+                                                    detect
+                                                    deci-hetz band GWs. I met great people working on gravitational wave
+                                                    astronomy and made a very good interaction.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://www.icts.res.in/research/astrorel"
+                                                        target="_blank">Visit the
+                                                        group</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/titec_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Department of Physics, Tokyo Institute of Technology</h4>
+                                                <h3>VCDM and Cuscuton</h3>
+                                                <span>October 12, 2022</span>
+                                                <p>This talk was given before the cosmology and gravity group at the
+                                                    Tokyo Institute of Technology, Tokyo, Japan. The presentation of my
+                                                    results
+                                                    on comparing two theories: VCDM and Cuscuton. The talk was
+                                                    pedagogical since there was participation from Master's students.
+                                                </p>
+
+                                                <div class="accent-button button">
+                                                    <a href="http://www.th.phys.titech.ac.jp/cosmo/gucciweb/member.html"
+                                                        target="_blank">Visit
+                                                        the group</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/NAS_workshop_scale.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>NAS Workshop 2022</h4>
+                                                <h3>VCDM: Minimal theory of gravity</h3>
+                                                <span>September 15-18, 2022</span>
+                                                <p>This workshop is CTPNP internal event, where researchers from
+                                                    Thailand meet and discuss, the research topics and make a very
+                                                    relaxed environment.
+                                                    This workshop promotes and gives an environment to make new
+                                                    collaborations on our interesting research themes. In this event, I
+                                                    was given
+                                                    a chance to introduce my work on a Minimally Modified Gravity Theory
+                                                    called VCDM.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="https://na.mahidol.ac.th/nas2020/researchworkshopseries/"
+                                                        target="_blank">More
+                                                        on NAS workshop</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/MES_PONNANI_COLLEGE_MAIN_BUILDING_scale.jpeg" alt="">
+                                            <div class="text-content">
+                                                <h4>On the edge of what we know?</h4>
+                                                <h3>The 2nd CAF&Eacute FICICA, Good Old days cafe & bistro, Nakhon Sawan
+                                                </h3>
+                                                <span>5 August, 2023</span>
+                                                <p>This is my second formal outreach activity and was a very amazing
+                                                    event. After the talk, there was a panel discussion
+                                                    together with Prof. Shinji Tujikawa and Prof. Burin Gumjudpai. The
+                                                    public asked many interesting questions about cosmology
+                                                    and the limitations of present understanding. The audience also
+                                                    included very eminent people like the local governor of the
+                                                    Nakhon Sawan province. He got impressed by this event and said, he
+                                                    will support such events in future. Here are some news links for it.
+                                                </p>
+                                                <div class="accent-button button">
+                                                    <a href="https://na.mahidol.ac.th/nas2020/public-forum//"
+                                                        target="_blank">CAF&Eacute
+                                                        FICICA</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="img/MES_PONNANI_COLLEGE_MAIN_BUILDING_scale.jpeg" alt="">
+                                            <div class="text-content">
+                                                <h4>Understanding our Universe: Current status</h4>
+                                                <h3>Department of Physics, MES Ponnani College, Ponnani, India</h3>
+                                                <span>27 June, 2022</span>
+                                                <p>This is my first outreach activity. I was addressing Undergraduate
+                                                    students in a community college in a
+                                                    a small town called Ponnani in Kerala, India. The basic idea is to
+                                                    give motivation to students who are
+                                                    mostly women and to introduce research to them. This was a very
+                                                    memorable moment for me to make a presentation
+                                                    in this college, where I was a student a few years back.</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="http://www.mesponnanicollege.ac.in/" target="_blank">Visit
+                                                        College</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="content-section">
+            <div class="section-heading">
+                <h1>Useful<br> <em>Tools</em></h1>
+                <p style="text-align: justify;"> Here are some of the tools I use every day. Some of them are scientific
+                    tools, such
+                    as Mathematica, while others
+                    are more general tools that can help you manage projects and track your work time. This section will
+                    be updated as I become
+                    more familiar with each tool. My list will be updated if I discover any new tools that are useful.
+                </p>
+            </div>
+
+            <article>
+                <ul class="accordion">
+                    <li>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <label for="first">xAct</label>
+                        <div class="content">
+                            <p style="text-align: justify;">xAct is a symbolic tensor algebra package written in <a
+                                    href="https://www.wolfram.com/" target="_blank"> Wolfram Language</a>.
+                                This is useful in constructing Lagrangians from tensor objects and deriving covariant
+                                equations of motion. There are many other
+                                possibilities one can do with this package, for example, one can perform the Dirac
+                                algorithm and count degrees of freedom in
+                                complicated theories. With xCoba, one can also perform component calculations, given any
+                                metric for theory under consideration.
+                                There are many good examples one can find online, for example, <a
+                                    href="https://github.com/xAct-contrib/examples" target="_blank"> click here</a>.
+                                Here are some of my examples useful for cosmological perturbation.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="second">
+                        <label for="second">CLASS</label>
+                        <div class="content">
+                            <p style="text-align: justify;">The Cosmic Linear Anisotropy Solving System (<a
+                                    href="https://lesgourg.github.io/class_public/class.html" target="_blank">CLASS</a>) is an
+                                Einstein-Boltzmann code written in the C language. It
+                                calculates the evolution of cosmological linear perturbation and compares the
+                                observables from Cosmic Microwave Background
+                                Radiation (CMB) and Large Scale Structure. Tools like this are highly important for the
+                                cosmological tests of theories of
+                                gravity. Using this, I have constrained different theories of gravity. The basics of
+                                cosmological perturbation theory are
+                                explained in the paper by <a href="https://arxiv.org/abs/astro-ph/9506072" target="_blank"> Ma and
+                                    Bershinger</a>. To learn more about the
+                                approximation schemes, one can go through, the <a
+                                    href="https://arxiv.org/abs/1104.2933" target="_blank">
+                                    CLASS-II paper</a>.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="third">
+                        <label for="third">Super Productivity</label>
+                        <div class="content">
+                            <p style="text-align: justify;"><a href="https://super-productivity.com/" target="_blank"> Superproductivity</a> is a
+                                great tool for tracking how long you spend on your work. I like using this tool because
+                                it gives an
+                                idea of how much time I spend on my work. This helps me to limit myself to deviate from
+                                work. In addition, this application helped me understand how long
+                                it may take to complete a task. The best thing is that if you are disconnected from the
+                                task, you will be informed.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="accordion" id="fourth">
+                        <label for="fourth">Trello</label>
+                        <div class="content">
+                            <p style="text-align: justify;"><a href="https://trello.com/" target="_blank">Trello</a> is a working management tool. I
+                                use this tool to illustrate my project workflow. This gives a good idea of
+                                how each project progresses and what immediate steps should be taken next. You can find
+                                many interesting features for effective work
+                                management. With this tool, I learned how to organize my own projects.</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section id="contact" class="content-section">
+
+            <div id="contact-content">
                 <div class="section-heading">
-                    <h1>Useful<br> <em>Tools</em></h1>
-                    <p  align="justify"> Here are some of the tools I use every day. Some of them are scientific tools, such as Mathematica, while others
-			    are more general tools that can help you manage projects and track your work time. This section will be updated as I become
-			    more familiar with each tool. My list will be updated if I discover any new tools that are useful.</p>
+                    <h1>Contact<br><em>Address</em></h1>
+                    <p>Centre for Theoretical Physics & Natural Philosophy<br>
+                        “Nakhonsawan Studiorum for Advanced Studies”<br>
+                        Mahidol University, Nakhonsawan Campus, 402/1 Moo 5 Khaothong, Phayuha Khiri, Nakhonsawan,
+                        Thailand 60130 <br>
+                        You can reach me at<br>
+                        <em>masroorcp@gmail.com<br>masroor.cha@mahidol.ac.th</em>
+                    </p>
+
                 </div>
 
-                <article>
-                    <ul class = "accordion">
-                        <li>
-                            <input type="radio" name="accordion" id="first" checked>
-                            <label for="first">xAct</label>
-                            <div class="content">
-                                <p align="justify">xAct is a symbolic tensor algebra package written in <a href="https://www.wolfram.com/"> Wolfram Language</a>. 
-				This is useful in constructing Lagrangians from tensor objects and deriving covariant equations of motion. There are many other 
-				possibilities one can do with this package, for example, one can perform the Dirac algorithm and count degrees of freedom in 
-				complicated theories. With xCoba, one can also perform component calculations, given any metric for theory under consideration. 
-				There are many good examples one can find online, for example, <a href="https://github.com/xAct-contrib/examples"> click here</a>. 
-				Here are some of my examples useful for cosmological perturbation. 
-				</p>
-                            </div>
-                        </li>
 
-                        <li>
-                            <input type="radio" name="accordion" id="second">
-                            <label for="second">CLASS</label>
-                            <div class="content">
-                                <p  align="justify">The Cosmic Linear Anisotropy Solving System (<a href="https://lesgourg.github.io/class_public/class.html">CLASS</a>) is an Einstein-Boltzmann code written in the C language. It 
-					calculates the evolution of cosmological linear perturbation and compares the observables from Cosmic Microwave Background 
-					Radiation (CMB) and Large Scale Structure. Tools like this are highly important for the cosmological tests of theories of 
-					gravity. Using this, I have constrained different theories of gravity. The basics of cosmological perturbation theory are 
-					explained in the paper by <a href="https://arxiv.org/abs/astro-ph/9506072"> Ma and Bershinger</a>. To learn more about the
-					approximation schemes, one can go through, the <a href="https://arxiv.org/abs/1104.2933"> CLASS-II paper</a>.</p>
-                            </div>
-                        </li>
+                <div class="form_and_address">
+                    <div id="map">
 
-                        <li>
-                            <input type="radio" name="accordion" id="third">
-                            <label for="third">Super Productivity</label>
-                            <div class="content">
-                                <p  align="justify"><a href="https://super-productivity.com/"> Superproductivity</a> is a great tool for tracking how long you spend on your work. I like using this tool because it gives an 
-				idea of how much time I spend on my work. This helps me to limit myself to deviate from work. In addition, this application helped me understand how long 
-				it may take to complete a task. The best thing is that if you are disconnected from the task, you will be informed.</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="accordion" id="fourth">
-                            <label for="fourth">Trello</label>
-                            <div class="content">
-                                <p align="justify"><a href="https://trello.com/">Trello</a> is a working management tool. I use this tool to illustrate my project workflow. This gives a good idea of 
-				how each project progresses and what immediate steps should be taken next. You can find many interesting features for effective work 
-				management. With this tool, I learned how to organize my own projects.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-                
-            </section>
-	    
-            <section id="contact" class="content-section">
-                
-                <div id="contact-content">
-                    <div class="section-heading">
-                        <h1>Contact<br><em>Address</em></h1>
-                        <p>Centre for Theoretical Physics & Natural Philosophy<br>
-                           “Nakhonsawan Studiorum for Advanced Studies”<br>
-                           Mahidol University, Nakhonsawan Campus, 402/1 Moo 5 Khaothong, Phayuha Khiri, Nakhonsawan, Thailand 60130 <br>
-                           You can reach me at<br>
-                           <em>masroorcp@gmail.com<br>masroor.cha@mahidol.ac.th</em></p>
-                        
-                    </div>
+                        <!-- How to change your own map point
+                       1. Go to Google Maps
+                       2. Click on your location point
+                       3. Click "Share" and choose "Embed map" tab
+                       4. Copy only URL and paste it within the src="" field below
+                -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7686.5647817735935!2d100.154906!3d15.576554000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04589839318e9%3A0xf04fb558f3130d0!2sMahidol%20University%2C%20Nakhon%20Sawan%20Campus!5e0!3m2!1sen!2sth!4v1692682279684!5m2!1sen!2sth"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
 
-		    <div id="map">
-                
-                	<!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7686.5647817735935!2d100.154906!3d15.576554000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04589839318e9%3A0xf04fb558f3130d0!2sMahidol%20University%2C%20Nakhon%20Sawan%20Campus!5e0!3m2!1sen!2sth!4v1692682279684!5m2!1sen!2sth" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="form">
+                        <form action="https://formspree.io/f/mkgwjaew" method="POST" id="contact-form">
+                            <h3>Say Hello</h3>
+
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                            <br>
+
+                            <textarea id="message" name="message" required placeholder="Message"></textarea>
+                            <br>
+                            <button type="submit">Send</button>
+                        </form>
+                        <div id="toast" class="toast">Form submitted successfully!</div>
+                    </div>
                 </div>
-		    
-                    </section>
-            <section class="footer">
-                <p></p>
-            </section>
+        </section>
+
+
+        <section class="footer">
+        </section>
+
+        <div class="sticky-buttons">
+
+            <a class="sticky-btn cv" data-tooltip="Download CV" href="cv/masroor-cv.pdf" target="_blank">
+                <!-- <i class="fa-solid fa-download"></i> -->
+
+                <img src="svg/cv.svg" alt="" width="30px" height="33px">
+
+            </a>
+            <a class="sticky-btn publ" data-tooltip="Download publications" href="cv/masroor-lop.pdf" target="_blank">
+                <img src="svg/download.svg" alt="" width="30px" height="33px">
+            </a>
+            <a class="sticky-btn msg" data-tooltip="Contact Me" href="#contact-form">
+                <img src="svg/contact.svg" alt="" width="25px" height="25px">
+            </a>
         </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
@@ -589,11 +1001,11 @@ https://templatemo.com/tm-518-sentra
         var delta = 5;
         var navbarHeight = $('header').outerHeight();
 
-        $(window).scroll(function(event){
+        $(window).scroll(function (event) {
             didScroll = true;
         });
 
-        setInterval(function() {
+        setInterval(function () {
             if (didScroll) {
                 hasScrolled();
                 didScroll = false;
@@ -602,28 +1014,111 @@ https://templatemo.com/tm-518-sentra
 
         function hasScrolled() {
             var st = $(this).scrollTop();
-            
+
             // Make sure they scroll more than delta
-            if(Math.abs(lastScrollTop - st) <= delta)
+            if (Math.abs(lastScrollTop - st) <= delta)
                 return;
-            
+
             // If they scrolled down and are past the navbar, add class .nav-up.
             // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight){
+            if (st > lastScrollTop && st > navbarHeight) {
                 // Scroll Down
                 $('header').removeClass('nav-down').addClass('nav-up');
             } else {
                 // Scroll Up
-                if(st + $(window).height() < $(document).height()) {
+                if (st + $(window).height() < $(document).height()) {
                     $('header').removeClass('nav-up').addClass('nav-down');
                 }
             }
-            
+
             lastScrollTop = st;
         }
+
+
+        // // Get all elements with class "popup-btn"
+        const popupBtns = document.querySelectorAll('.popup-btn');
+
+        // Add click event listener to each popup button
+        popupBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const popupId = this.getAttribute('data-popup'); // Get the popup ID from data-popup attribute
+                const popup = document.querySelector(popupId); // Find the corresponding popup element
+                // const popup=document.getElementById('popupId');
+                console.log("popupId ", popupId, "popup", popup)
+                // Show the popup
+                popup.classList.add('showP');
+
+                // Close popup when close button is clicked
+                popup.querySelector("#close").addEventListener('click', function () {
+                    popup.classList.remove('showP');
+                });
+
+                // Optional: Close popup when clicking outside of it
+                window.onclick = function (event) {
+                    if (event.target === popup) {
+                        popup.classList.remove('showP');
+                    }
+                };
+            });
+        });
+
+
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            adaptiveHeight: true,
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true
+        });
+
+
+
     </script>
 
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const form = event.target;
+            const data = new FormData(form);
+            const action = form.action;
+
+            try {
+                const response = await fetch(action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    form.reset();
+                    showToast();
+                } else {
+                    alert('There was an error submitting the form');
+                }
+            } catch (error) {
+                alert('There was an error submitting the form');
+            }
+        });
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.className = 'toast show';
+            setTimeout(function () { toast.className = toast.className.replace('show', ''); }, 3000);
+        }
+    </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 
 </body>
+
 </html>
