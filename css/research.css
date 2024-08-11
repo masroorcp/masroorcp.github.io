@@ -135,6 +135,9 @@ max-height: 700px;
 .slider-head, .slider-para{
   color: white;
 }
+.slider-para{
+  line-height: unset;
+}
 @media (max-width: 1200px) {
 .centralalign{
   width: 90%;
